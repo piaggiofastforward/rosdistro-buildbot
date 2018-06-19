@@ -1,0 +1,43 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 141: http://ros.org/reps/rep-0141.html
+---
+release_platforms:
+  ubuntu:
+  - trusty
+repositories:
+  pff:
+    doc:
+      type: git
+      url: git@github.com:piaggiofastforward/pff-ros-pkgs.git
+      version: kinetic-devel
+    release:
+      packages:
+      - pff_bt_lib
+      - pff_bt_lib_test
+      - pff_bt_lib_viz
+      - pff_developer
+      - pff_joy
+      - pff_math
+      - pff_model_gita
+      - pff_model_view
+      - pff_models
+      - pff_msgs
+      - pff_command
+      - pff_pursuit_controller
+      - pff_tasks
+      - pff_test_command
+      - pff_test_pursuit_controller
+      - pff_testing
+      - pff_utils
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/mikeferguson/pff-ros-pkgs-release.git
+      version: 0.1.0
+    source:
+      type: git
+      url: git@github.com:piaggiofastforward/pff-ros-pkgs.git
+      version: kinetic-devel
+    status: developed
+type: distribution
+version: 1
